@@ -252,7 +252,7 @@ print(flag.decode())
 This script is not the best one, I know it, Not optimize (while loop *le bouff' que je suis*), and the comparison between the pictures could be not accurate and send the wrong solution. Currently, I test several times and there were any mistake, but it could be, you just need to restart the script (and why not add the last picture in the database for more accuracy).
 
 There is the flag :
-![flag.png]{/images/flag.png}
+![flag.png](./images/flag.png)
 ```
 R2Lille{4lly_0R_3n3my_Th4T_1s_Th3_1A_Qu3St10N}
 ```

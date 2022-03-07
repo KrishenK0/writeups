@@ -205,10 +205,10 @@ if __name__ == '__main__':
     main()
 ```
 This method have a lot of issues, and sure it is not the most optimize, moreover Tesseract is not 100% accurate.
-![bruteforce.png]{/images/bruteforce.png}
+![bruteforce.png](./images/bruteforce.png)
 
 There is the flag :
-![flag.png]{/images/flag.png}
+![flag.png](./images/flag.png)
 ```
 R2Lille{C4pTCh4_4r3_N0t_3n0uGh}
 ```

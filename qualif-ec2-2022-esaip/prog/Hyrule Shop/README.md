@@ -167,7 +167,7 @@ while True:
 It is not the best way, one reason because I am using a while loop, also regex could not be fastest method.
 
 There is the flag :
-![flag.png]{/images/flag.png}
+![flag.png](./images/flag.png)
 ```
 R2Lille{Th3_Gr34t3ST_Sh0P}
 ```
