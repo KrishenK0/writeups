@@ -64,6 +64,12 @@ There is it :
 ```
 ^\(([0-9]+) rupees\)$
 ```
+#### Schema of the transformation with the regular expression
+```
+(202521 rupees)
+ ------
+ price
+```
 
 To finish, we need to implement those regex into our code, and manage by a set of conditions the informations collected.
 
