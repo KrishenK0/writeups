@@ -11,7 +11,7 @@ Prove him that his system is not that secure by login into his
 website.
 ```
 
-Level : Medium
+Level : Medium\
 Author : Mizu
 
 ## Write up
@@ -19,8 +19,12 @@ Programming language : Python 🐍
 
 For this challenge, we need to login into his website by using the password list gived by the sweet owner.
 
-![Main page]{images/site.png}
-![Login page]{images/login.png}
+![Main page](./images/site.png)
+
+The logging page require a simple captcha to secure the logging form and prevent the bruteforce. 
+>*Big mistake to use this captcha ahah!*
+
+![Login page](./images/login.png)
 
 Several problems we got :
 * Submit the form
@@ -204,10 +208,10 @@ def main():
 if __name__ == '__main__':
     main()
 ```
-This method have a lot of issues, and sure it is not the most optimize, moreover Tesseract is not 100% accurate.
+This method have a lot of issues, and sure it is not the most optimize, moreover Tesseract is not 100% accurate.\
 ![bruteforce.png](./images/bruteforce.png)
 
-There is the flag :
+There is the flag :\
 ![flag.png](./images/flag.png)
 ```
 R2Lille{C4pTCh4_4r3_N0t_3n0uGh}
