@@ -1,4 +1,3 @@
-from typing import Iterable
 from websocket import create_connection
 import re, requests, os
 from bs4 import BeautifulSoup
@@ -46,7 +45,7 @@ while True:
     ws = create_connection("ws://ctf10k.root-me.org:8000")
 
     while True:
-        str_data = bin2str(ws.recv())   
+        str_data = bin2str(ws.recv())
 
         regex = re.search(r"(cas|electrons|weight)[a-z ]+([A-Za-z]+)", str_data)
         try:
@@ -72,7 +71,7 @@ while True:
         ws.send(''.join(f"{ord(i):08b}" for i in result))
         res = bin2str(ws.recv())
         if res.find('WRONG')!=-1 or res.find('Congratz, ')!=-1: break
-        
+
     if res.find('Congratz, ')!=-1: print(f"{bcolors.OKGREEN}{bcolors.BOLD}Success{bcolors.ENDC}")
     else: print(f"{bcolors.FAIL}Error while processing, restarting script...{bcolors.ENDC}")
     ws.close()
